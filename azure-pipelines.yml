@@ -13,6 +13,7 @@ steps:
     SonarQube: 'SonarConexion'
     scannerMode: 'MSBuild'
     projectKey: 'Space_Game_-_web_-_Tests_Space_Game_-_web_AYKJrQznFqta1f3xq63W'
+    projectName: 'Space Game - web'
 
 # Run Code Analysis task
 - task: SonarQubeAnalyze@5
