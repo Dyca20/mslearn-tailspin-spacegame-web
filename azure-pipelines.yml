@@ -2,12 +2,16 @@ trigger:
 - '*'
 
 pool:
-  name: Default
+  
   vmImage: 'ubuntu-20.04'
 
   demands:
   
   - npm
+
+pool:
+name: Default
+
 
 steps:
 # Prepare Analysis Configuration task
