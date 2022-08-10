@@ -2,14 +2,18 @@ trigger:
 - '*'
 
 pool:
+  name: CR-LAP-JOS-FAL
   vmImage: 'ubuntu-20.04'
+
   demands:
+  
   - npm
 
 steps:
 # Prepare Analysis Configuration task
 - task: SonarQubePrepare@5
   inputs:
+   
     SonarQube: 'SonarConexion'
     scannerMode: 'MSBuild'
     projectKey: 'Space_Game_-_web_-_Tests_Space_Game_-_web_AYKJrQznFqta1f3xq63W'
